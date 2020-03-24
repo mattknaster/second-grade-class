@@ -94,3 +94,12 @@
 	width:100%;
 	z-index:999;
 }
+
+.story-point {
+	width:100%;
+	height:100%;
+}
+
+.joseph_and_coat {
+	background-image:url('images/jacob-and-joseph.jpg');
+}
