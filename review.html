@@ -1,0 +1,116 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Mr. Matt's 2nd Grade Class </title>
+<link href="Styles.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="stylesheet" href="file:///Macintosh%20HD/Users/mattknaster/Documents/Unnamed%20Site%202/bootstrap-4.4.1-dist.zip">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<nav>
+	<div class="nav-links-background">
+		<a class="nav-links" href="home.html" >Home</a>
+		<a class="nav-links" href="review.html">Review</a>
+		<a class="nav-links" href="prayers.html">Prayers</a>
+		<div class="text-white float-right" style="padding-right:30px">Mr. Matt's 2nd Grade Class</div>
+	</div> 
+</nav>
+<body>
+<div class="container" style="padding-bottom:40px">
+	<div class="row">
+	<div class="col-sm-12">
+		<h1 class="text-center">Numbers</h1>
+		</div>
+	</div>
+	<div class="row">
+	<div class="col-sm-4">
+		<h1>1-10</h1>
+		<p>1 = Echad</p>
+		<p>2 = Shtaim</p>
+		<p>3 = Shalosh</p>
+		<p>4 = Arba</p>
+		<p>5 = Hamesh</p>
+		<p>6 = Shesh</p>
+		<p>7 = Sheva</p>
+		<p>8 = Shmoneh</p>
+		<p>9 = Tesha</p>
+		<p>10 = Eser</p>
+		</div>
+		<div class="col-sm-4">
+		<h1>11-19</h1>
+		<p>11 = Echad esre</p>
+		<p>12 = Shtaim esre</p>
+		<p>13 = Shalosh esre</p>
+		<p>14 = Arba esre</p>
+		<p>15 = Hamesh esre</p>
+		<p>16 = Shesh esre</p>
+		<p>17 = Sheva esre</p>
+		<p>18 = Shmoneh esre</p>
+		<p>19 = Tesha esre</p>
+		</div>
+		<div class="col-sm-4">
+		<h1>20-100</h1>
+		<p>20 = Esrim</p>
+		<p>30 = Shloshim</p>
+		<p>40 = Arbaim</p>
+		<p>50 = Hamishim</p>
+		<p>60 = Sheshim</p>
+		<p>70 = Shivim</p>
+		<p>80 = Shmonim</p>
+		<p>90 = Tishim</p>
+		<p>100 = Mea</p>
+		</div>
+	</div>
+		<div class="row">
+		To count a two-digit number above 20, remember to say the number followed by a v' and then the number. So 21 would be esrim v'echad, 45 would be arbaim v'hamesh, and 83 would be shmonim v'shalosh.
+		</div>
+	</div>
+	<div>
+</div>
+<div class="container">
+	<div class="row">
+	<div class="col-sm-12">
+		<h1 class="text-center">Number Game</h1>
+		<p>Try to see how many numbers you can get correctly within a minute.</p>
+		</div>
+	</div>
+	<p id="timer">60</p>
+<button onclick="clock(); document.getElementById('demo').innerHTML='5';">Start counter</button>
+	<p id="numberDisplay" style="color: orange; text-align:center; font-size:25px; font-weight:600" onclick="newNumber()"></p>
+	</div>
+<script>
+	var myTimer;
+   function clock() {
+     myTimer = setInterval(myClock, 1000);
+     var c = 60;
+
+     function myClock() {
+       document.getElementById("timer").innerHTML = --c;
+       if (c == 0) {
+         clearInterval(myTimer);
+         alert("Reached zero");
+       }
+     }
+   }
+	</script>
+<script>
+	var number = [
+		'1',
+		'2',
+		'3',
+		'4',
+		'5',
+		'6',
+		'7',
+		'8',
+		'9',
+		'10'
+	]; 
+	function newNumber(){
+		 {var randomNumber = Math.floor(Math.random() * (number.length));
+         document.getElementById('#numberDisplay').innerHTML = number[randomNumber]; 
+         };
+</script>
+</body>
+</html>
