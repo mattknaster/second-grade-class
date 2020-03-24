@@ -19,16 +19,17 @@
 	</div> 
 </nav>
 <body>
-<div class="container" style="padding-bottom:40px">
+<div class="container" style="padding-top:40px; padding-bottom:40px">
 	<div class="row">
 	<div class="col-sm-12">
-		<h1 class="text-center">Numbers</h1>
+		<h1 class="text-center" style="color:green" >Numbers</h1>
+		<h3 class="text-center" style="color:green">If you click on the word, a new window will open up with the pronunciation.</h3>
 		</div>
 	</div>
-	<div class="row">
-	<div class="col-sm-4">
+	<div class="row" style="padding-top:40px">
+	<div class="col-sm-4" style="color:blue">
 		<h1>1-10</h1>
-		<p>1 = Echad</p>
+		<p class="numbers-color">1 = <a href="Recordings-link/echad.html" target="_blank" class="numbers-color">Echad</a></p>
 		<p>2 = Shtaim</p>
 		<p>3 = Shalosh</p>
 		<p>4 = Arba</p>
@@ -39,7 +40,7 @@
 		<p>9 = Tesha</p>
 		<p>10 = Eser</p>
 		</div>
-		<div class="col-sm-4">
+		<div class="col-sm-4" style="color:red">
 		<h1>11-19</h1>
 		<p>11 = Echad esre</p>
 		<p>12 = Shtaim esre</p>
@@ -51,7 +52,7 @@
 		<p>18 = Shmoneh esre</p>
 		<p>19 = Tesha esre</p>
 		</div>
-		<div class="col-sm-4">
+		<div class="col-sm-4" style="color:mediumpurple">
 		<h1>20-100</h1>
 		<p>20 = Esrim</p>
 		<p>30 = Shloshim</p>
@@ -65,54 +66,11 @@
 		</div>
 	</div>
 		<div class="row">
-		To count a two-digit number above 20, remember to say the number followed by a v' and then the number. So 21 would be esrim v'echad, 45 would be arbaim v'hamesh, and 83 would be shmonim v'shalosh.
+		To count from 21-99, remember to say the number in the 20-100 column first, then add a v', and then say the number in the 1-10 column. So 41 would be arbaim v'echad. 67 would be sheshim v'sheva. 92 would be tishim v'shtaim. 
 		</div>
 	</div>
 	<div>
 </div>
-<div class="container">
-	<div class="row">
-	<div class="col-sm-12">
-		<h1 class="text-center">Number Game</h1>
-		<p>Try to see how many numbers you can get correctly within a minute.</p>
-		</div>
-	</div>
-	<p id="timer">60</p>
-<button onclick="clock(); document.getElementById('demo').innerHTML='5';">Start counter</button>
-	<p id="numberDisplay" style="color: orange; text-align:center; font-size:25px; font-weight:600" onclick="newNumber()"></p>
-	</div>
-<script>
-	var myTimer;
-   function clock() {
-     myTimer = setInterval(myClock, 1000);
-     var c = 60;
 
-     function myClock() {
-       document.getElementById("timer").innerHTML = --c;
-       if (c == 0) {
-         clearInterval(myTimer);
-         alert("Reached zero");
-       }
-     }
-   }
-	</script>
-<script>
-	var number = [
-		'1',
-		'2',
-		'3',
-		'4',
-		'5',
-		'6',
-		'7',
-		'8',
-		'9',
-		'10'
-	]; 
-	function newNumber(){
-		 {var randomNumber = Math.floor(Math.random() * (number.length));
-         document.getElementById('#numberDisplay').innerHTML = number[randomNumber]; 
-         };
-</script>
 </body>
 </html>
