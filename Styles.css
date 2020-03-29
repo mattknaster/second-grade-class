@@ -131,3 +131,8 @@
 .numbers-color-3:hover{
 	color:rebeccapurple;
 }
+#timer {
+	color:white;
+	background-color:red;
+	font-size:30px;
+}

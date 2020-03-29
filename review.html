@@ -73,10 +73,13 @@
 	<h1>Random Number Generator</h1>
 	</div>
 <div class="d-flex flex-row justify-content-center">
-	<p>See how many numbers you can get in shishim seconds. Click on the button to start the timer and to generate a new number. How many can you get?</p>
+	<p>How many numbers can you get correclty in shishim seconds? Press the "timer" button to start the count-down and click "new number" to get a new number.</p>
 </div> 
+	<div class="d-flex flex-row justify-content-center" style="padding-bottom:30px">
+		<input type="button" id="timer" value="Timer" onclick="setTimeout(myFunction,60000);">
+	</div>
 	<div class="d-flex flex-row justify-content-center">
-		 <input type="button" id="numberGenerator" value="New Number" onclick="newNumber(); setTimeout(myFunction, 60000);">
+		<input type="button" id="numberGenerator" value="New Number" onclick="newNumber();">
 	</div>
 		 <div class="d-flex flex-row justify-content-center">
 				<p id="numberDisplay"></p>
