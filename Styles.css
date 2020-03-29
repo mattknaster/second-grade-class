@@ -115,3 +115,19 @@
 	font-size:50px;
 	font-weight:600;
 }
+
+.numbers-color-2 {
+	color:red;
+}
+
+.numbers-color-2:hover{
+	color:lightcoral; 
+}
+
+.numbers-color-3 {
+	color:mediumpurple;
+}
+
+.numbers-color-3:hover{
+	color:rebeccapurple;
+}
