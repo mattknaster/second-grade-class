@@ -103,3 +103,15 @@
 .joseph_and_coat {
 	background-image:url('images/jacob-and-joseph.jpg');
 }
+
+#numberGenerator {
+	color:white;
+	background-color:red; 
+	font-size:30px;
+}
+
+#numberDisplay {
+	color:blue;
+	font-size:50px;
+	font-weight:600;
+}
