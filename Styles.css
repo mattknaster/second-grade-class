@@ -140,3 +140,8 @@
 .numbers-color-4 {
 	color:lightseagreen;
 }
+
+
+.numbers-color-4:hover{
+	color:lightgreen;
+}
