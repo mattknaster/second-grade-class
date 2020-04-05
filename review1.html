@@ -8,17 +8,27 @@
 <link rel="stylesheet" href="file:///Macintosh%20HD/Users/mattknaster/Documents/Unnamed%20Site%202/bootstrap-4.4.1-dist.zip">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-<nav>
-	<div class="nav-links-background">
-		<a class="nav-links" href="home.html" >Home</a>
-		<a class="nav-links" href="review.html">Vocab Review</a>
-		<a class="nav-links" href="prayers.html">Prayers</a>
-		<a class="nav-links" href="exodus.html">Exodus</a>
-		<a class="nav-links" href="assignments.html">Assignments</a>
-		<div class="text-white float-right" style="padding-right:30px">Mr. Matt's 2nd Grade Class</div>
-	</div> 
-</nav>
 <body>
+<h1>Hello Everyone</h1>
+<p id="demo"></p>
+<p id="caars"></p>
+<p id="demo3"></p>
+<button type="button" onClick="button()">Click me to see what car you win!</button>
+	</body> 
+<script>
+var puns = {
+	firstName : "Matt"
+}
 
-</body>
+function button(){
+	document.getElementById("demo3").innerHTML = puns.firstName + " tells bad puns.";
+};
+	
+var puns2 = ["hello", "how are you", 60];
+	document.getElementById("demo").innerHTML = puns2[1];
+	
+document.getElementById("caars").innerHTML = typeof x;
+	
+
+	</script>
 </html>

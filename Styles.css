@@ -145,3 +145,11 @@
 .numbers-color-4:hover{
 	color:lightgreen;
 }
+#demo {
+color:red;
+	display:block;
+}
+
+#demo2 {
+	display:block;
+}
