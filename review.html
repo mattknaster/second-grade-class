@@ -8,15 +8,18 @@
 <link rel="stylesheet" href="file:///Macintosh%20HD/Users/mattknaster/Documents/Unnamed%20Site%202/bootstrap-4.4.1-dist.zip">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-<nav>
-	<div class="nav-links-background">
+	<nav class="d-flex flex-row nav-links-background flex-wrap">
+	<div class="col-sm-10">
 		<a class="nav-links" href="home.html" >Home</a>
 		<a class="nav-links" href="review.html">Vocab Review</a>
+		<a class="nav-links" href="Letters.html">Letters</a>
 		<a class="nav-links" href="prayers.html">Prayers</a>
 		<a class="nav-links" href="exodus.html">Exodus</a>
 		<a class="nav-links" href="activities.html">Activities</a>
-		<div class="text-white float-right" style="padding-right:30px">Mr. Matt's 2nd Grade Class</div>
-	</div> 
+		</div>
+	<div class="col-sm-2">
+		<div class="text-white float-right matt-2" >Mr. Matt's 2nd Grade Class</div>
+		</div>
 </nav>
 <body>
 <div class="container" style="padding-top:40px; padding-bottom:40px">
@@ -100,115 +103,12 @@
 
 </body>
 	<script>
-    var numbers = [
-         '1', 
-         '2', 
-         '3', 
-         '4', 
-         '5', 
-         '6', 
-         '7', 
-         '8', 
-		 '9',
-		'10',
-		'11',
-		'12',
-		'13',
-		'14',
-		'15',
-		'16',
-		'17',
-		'18',
-		'19',
-		'20',
-		'21',
-		'22',
-		'23',
-		'24',
-		'25',
-		'26',
-		'27',
-		'28',
-		'29',
-		'30',
-		'31',
-		'32',
-		'33',
-		'34',
-		'35',
-		'36',
-		'37',
-		'38',
-		'39',
-		'40',
-		'41',
-		'42',
-		'43',
-		'44',
-		'45',
-		'46',
-		'47',
-		'48',
-		'49',
-		'50',
-		'51',
-		'52',
-		'53',
-		'54',
-		'55',
-		'56',
-		'57',
-		'58',
-		'59',
-		'60',
-		'61',
-		'62',
-		'63',
-		'64',
-		'65',
-		'66',
-		'67',
-		'68',
-		'69',
-		'70',
-		'71',
-		'72',
-		'73',
-		'74',
-		'75',
-		'76',
-		'77',
-		'78',
-		'79',
-		'80',
-		'81',
-		'82',
-		'83',
-		'84',
-		'85',
-		'86',
-		'87',
-		'88',
-		'89',
-		'90',
-		'91',
-		'92',
-		'93',
-		'94',
-		'95',
-		'96',
-		'97',
-		'98',
-		'99',
-		'100',
-     ];
-    
+    function newNumber(){
+		var x = document.getElementById("numberDisplay")
+		x.innerHTML = Math.floor((Math.random() * 100) + 1);
+	};
 
      
-     function newNumber(){
-         {var randomNumber = Math.floor(Math.random() * (numbers.length));
-         document.getElementById('numberDisplay').innerHTML = numbers[randomNumber]; 
-         }};
     
         </script>
 <script>

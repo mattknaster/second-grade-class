@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Untitled Document</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+</script>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+<div class="container-fluid">
+	<div class="d-flex flex-column">
+<h1>Hebrew Body Parts Quiz</h1>
+<h3>1. What is this called?</h3>
+<img src="Images/rosh.png" width="100" height="100" alt="head">
+<p style="margin-top:20px"><button type="button" class="btn-incorrect">א.</button> Yad</p>
+<p><button type="button" class="btn-incorrect">ב.</button> Ketaf</p>
+<p><button type="button" class="btn-correct">כ.</button> Rosh</p>
+<p><button type="button" class="btn-incorrect">ד.</button> Peh</p>
+<h3 >2. What is this called?</h3>
+<img src="Images/yad.png" width="100" height="100" alt="hand">
+<p style="margin-top:20px"><button type="button" class="btn-incorrect">א.</button> Ketaf</p>
+<p><button type="button" class="btn-incorrect">ב.</button> Ayin</p>
+<p><button type="button" class="btn-incorrect">כ.</button> Peh</p>
+<p><button type="button" class="btn-correct">ד.</button> Yad</p>
+<h3>3. What are these called?</h3>
+<img src="Images/ayin.jpg" width="100" height="100" alt="eyes">
+<p style="margin-top:20px"><button type="button" class="btn-correct">א.</button> Ayin</p>
+<p><button type="button" class="btn-incorrect">ב.</button> Ozin</p>
+<p><button type="button" class="btn-inincorrect">כ.</button> Peh</p>
+<p><button type="button" class="btn-correct">ד.</button> Af</p>
+	</div>
+	</div>
+</body>
+<script>
+	//Quiz buttons//
+	$(function(){
+		$(".btn-correct").click(function(){
+			alert("Mazal, that's correct!");
+		});
+		$(".btn-incorrect").click(function(){
+			alert("Lo... try again.");
+		});
+	});
+</script>
+</html>

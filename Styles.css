@@ -153,3 +153,27 @@ color:red;
 #demo2 {
 	display:block;
 }
+
+.letter-size {
+	font-size:150px;
+}
+
+.letter-word-size {
+	font-size:60px;
+}
+
+.matt-2 {
+	display:block;
+}
+
+@media only screen and (max-width:1174px){
+	.matt-2{
+		display:none;
+	}
+}
+
+
+
+.text-red {
+	color:red;
+}
