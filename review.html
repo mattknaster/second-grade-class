@@ -91,14 +91,12 @@
 <div class="d-flex flex-row justify-content-center">
 	<p>How many numbers can you get correclty in shishim seconds? Press the "timer" button to start the count-down and click "new number" to get a new number.</p>
 </div> 
-	<div class="d-flex flex-row justify-content-center" style="padding-bottom:30px">
-		<input type="button" id="timer" value="Timer" onclick="setTimeout(myFunction,60000);">
-	</div>
 	<div class="d-flex flex-row justify-content-center">
-		<input type="button" id="numberGenerator" value="New Number" onclick="newNumber();">
+		<input type="button" id="timer" value="Timer" onclick="setTimeout(myFunction,60000);" style="margin-right:20px;">
+		<input type="button" id="numberGenerator" value="New Number" onclick="newNumber();" style="margin-left:80px;">
 	</div>
 		 <div class="d-flex flex-row justify-content-center">
-				<p id="numberDisplay"></p>
+				<p id="numberDisplay">0</p>
 		</div>
 
 </body>
