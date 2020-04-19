@@ -106,6 +106,15 @@
 	<iframe frameborder="0" width="371px" height="567px"  src="https://view.genial.ly/5e934112dee0d90e26fea855" type="text/html" allowscriptaccess="always" allowfullscreen="true" scrolling="yes" allownetworking="all"></iframe> 
 	</div>
 	</div>
+<div class="d-flex flex-row justify-content-center pt-5">
+	<h1>Mr. Matt Omer</h1>
+	</div>
+	<div class="d-flex flex-row justify-content-center pt-2">
+	<button type="button" class="omer-btn" onClick="newBodyPart()">Mr. Matt Omer</button>
+	</div>
+	<div class="d-flex flex-row justify-content-center pt-3">
+		<h3 id="matt-omer"></h3>
+	</div>
 
 </body>
 	<script>
@@ -113,6 +122,27 @@
 		var x = document.getElementById("numberDisplay")
 		x.innerHTML = Math.floor((Math.random() * 100) + 1);
 	};
+		
+	var bodyParts = [
+		"Se-ar",
+		"Rosh",
+		"Ayin",
+		"Ozin",
+		"Af",
+		"Peh",
+		"Ketaf",
+		"Oreph",
+		"Tzeroa",
+		"Yad",
+		"Regel",
+	]
+	
+	function newBodyPart(){
+	var newPart = Math.floor((Math.random() * bodyParts.length));
+	document.getElementById("matt-omer").innerHTML = bodyParts[newPart];
+	};
+	
+
 
      
     

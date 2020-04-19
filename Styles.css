@@ -177,3 +177,9 @@ color:red;
 .text-red {
 	color:red;
 }
+
+.omer-btn {
+	color:white;
+	background-color:red;
+	padding: 10px 10px 10px 10px;
+}
