@@ -183,3 +183,79 @@ color:red;
 	background-color:red;
 	padding: 10px 10px 10px 10px;
 }
+
+.text-blue {
+	color:blue;
+}
+
+.text-green {
+	color:green;
+}
+
+.text-purple {
+	color:purple;
+}
+
+.text-orange {
+	color:orange;
+}
+
+.text-peach {
+	color:peachpuff;
+}
+
+.text-baby-blue {
+	color:cornflowerblue;
+}
+
+.text-light-green {
+	color:lightseagreen
+}
+
+.text-light-orange {
+	color:darkorange;
+}
+
+.text-pink {
+	color:deeppink;
+}
+
+.text-dark-blue {
+	color:darkblue;
+}
+
+.text-light-purple {
+	color:mediumpurple;
+}
+
+.text-light-red {
+	color:indianred;
+}
+
+.margin-buttons {
+	margin-right:10px;
+	margin-left:10px;
+}
+
+.font-big {
+	font-size:40px;
+}
+
+.incorrect-answer {
+	font-size:30px;
+}
+
+.correct-answer {
+	font-size:30px;
+}
+
+.check-green {
+	color:green;
+}
+
+.wrong-red {
+	color:red;
+}
+
+.fa-check {
+}
